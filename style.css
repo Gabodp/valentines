@@ -35,9 +35,12 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -50,8 +53,24 @@ body {
     filter: drop-shadow(0 10px 20px rgba(255, 192, 203, 0.4));
 }
 
+.greeting {
+    font-size: 2.2rem;
+    color: #d63384;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #c44569;
+    margin-bottom: 30px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
 .question {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #d63384;
     margin-bottom: 40px;
     font-weight: 700;
@@ -108,19 +127,27 @@ body {
 
 /* Responsive design */
 @media (max-width: 480px) {
-    .question {
-        font-size: 1.5rem;
+    .greeting {
+        font-size: 1.6rem;
     }
-    
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .question {
+        font-size: 1.3rem;
+    }
+
     .dino-gif {
         width: 200px;
         height: 200px;
     }
-    
+
     .card {
         padding: 30px 20px;
     }
-    
+
     .btn {
         font-size: 1rem;
     }
